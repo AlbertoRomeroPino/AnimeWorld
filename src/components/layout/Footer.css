@@ -1,0 +1,31 @@
+/* Colores básicos */
+:root {
+    --color-bg-dark: #0d6efd;  /* Fondo oscuro */
+    --color-text-light: #ecf0f1; /* Texto claro */
+}
+
+.simple-footer {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+    padding: 15px 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; 
+}
+
+.simple-footer__content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.simple-footer__brand {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.simple-footer__copy {
+    font-size: 0.85em;
+    margin: 0;
+    opacity: 0.8;
+}
