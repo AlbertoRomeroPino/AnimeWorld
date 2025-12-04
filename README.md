@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 Anime World
 
-Currently, two official plugins are available:
+Una plataforma web simple y moderna, construida con React, diseñada para mostrar una base de datos de información detallada sobre diversos títulos de anime, incluyendo sinopsis, personajes principales y estado de emisión.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Características
 
-## React Compiler
+* **Detalles del Anime:** Muestra información clave como título original, género, número de episodios, estado y fecha de estreno.
+* **Gestión de Personajes:** Incluye una sección para destacar los personajes principales con sus respectivas imágenes y descripciones.
+* **Diseño Modular:** Componentes reutilizables de React (ej., `AnimeDetailCard`, `Footer`).
+* **Datos Tipados:** Uso de TypeScript para la definición estricta de la estructura de datos (`Anime`, `Personaje`).
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🛠️ Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
+* **Frontend:** [React](https://react.dev/)
+* **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
+* **Estilos:** CSS3 / Módulos CSS (o SCSS/Styled Components, si aplica).
+* **Gestión de Datos:** Archivos JSON/TypeScript locales (data mock).
+* **Control de Versiones:** Git & GitHub
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Instalación y Uso
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Sigue estos pasos para obtener una copia local de este proyecto y ejecutarlo en tu máquina.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Requisitos Previos
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Necesitas tener **Node.js** y **npm** (o Yarn/pnpm) instalados en tu sistema.
+
+### Instalación
+
+1. **Clonar el Repositorio**
+   **Bash**
+
+   ```
+   git clone https://github.com/AlbertoRomeroPino/AnimeWorld.git
+   ```
+2. **Acceder al Directorio del Proyecto**
+   **Bash**
+
+   ```
+   cd AnimeWorld
+   ```
+3. **Instalar Dependencias**
+   **Bash**
+
+   ```
+   npm install 
+   # o yarn install
+   ```
+4. **Ejecutar el Proyecto**
+   **Bash**
+
+   ```
+   npm run dev
+   # o yarn dev
+   ```
+
+El proyecto se iniciará en modo desarrollo y estará accesible en **`http://localhost:5173/`** (o el puerto que indique tu terminal).
+
+## 📂 Estructura de Archivos Clave
+
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+span
 ```
