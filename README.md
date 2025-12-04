@@ -60,5 +60,20 @@ El proyecto se iniciará en modo desarrollo y estará accesible en **`http://loc
 ## 📂 Estructura de Archivos Clave
 
 ```
-span
+AnimeWorld/
+├── public/                 # Archivos estáticos (íconos, manifest, assets directos).
+├── src/                    # 🏗️ Código Fuente de la Aplicación (React y TS)
+│   ├── assets/             # Recursos multimedia y estilos globales.
+│   │   └── images/         # Imágenes del proyecto.
+│   │       ├── anime/      # Imágenes de las portadas de los animes.
+│   │       └── personajes/ # Imágenes de los personajes principales.
+│   ├── components/         # Componentes reutilizables de React.
+│   │   ├── Blog/           # Componentes específicos de la sección Blog.
+│   │   │   ├── Info/
+│   │   │   └── Reutilizacion/
+│   │   └── layout/         # Componentes estructurales (Header, Footer, Nav).
+│   ├── data/               # 💾 Origen de datos (Ej: animes.json o animes.ts).
+│   ├── types/              # 🧬 Definiciones de Tipos de TypeScript (Interfaces/Types).
+│   ├── App.tsx             # Componente principal de la aplicación.
+│   └── main.tsx          
 ```
