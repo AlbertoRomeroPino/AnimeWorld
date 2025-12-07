@@ -14,7 +14,7 @@ function App() {
       <main className="main-content">
         {animes == undefined ? <p>La serie no existe</p> : 
         <>
-        <InfoAnime animeMostrado={anime} /*listadoAnime={animes}*//>
+        <InfoAnime animeMostrado={anime} />
 
         </>}
       </main>

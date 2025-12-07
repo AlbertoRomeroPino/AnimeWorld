@@ -11,11 +11,7 @@
 
 /* --- ESTILOS GENERALES Y LAYOUT --- */
 
-body {
-  background-color: var(--color-background);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 20px;
-}
+
 
 /* Contenedor principal de la tarjeta de detalle */
 .anime-detail-card {

@@ -29,28 +29,24 @@ Necesitas tener **Node.js** y **npm** (o Yarn/pnpm) instalados en tu sistema.
 ### Instalación
 
 1. **Clonar el Repositorio**
-   **Bash**
 
-   ```
+   ```bash
    git clone https://github.com/AlbertoRomeroPino/AnimeWorld.git
    ```
 2. **Acceder al Directorio del Proyecto**
-   **Bash**
 
-   ```
+   ```bash
    cd AnimeWorld
    ```
 3. **Instalar Dependencias**
-   **Bash**
 
-   ```
+   ```bash
    npm install 
    # o yarn install
    ```
 4. **Ejecutar el Proyecto**
-   **Bash**
 
-   ```
+   ```bash
    npm run dev
    # o yarn dev
    ```
@@ -59,12 +55,12 @@ El proyecto se iniciará en modo desarrollo y estará accesible en **`http://loc
 
 ## 📂 Estructura de Archivos Clave
 
-```
+```bash
 AnimeWorld/
 ├── public/                 # Archivos estáticos (íconos, manifest, assets directos).
 ├── src/                    # 🏗️ Código Fuente de la Aplicación (React y TS)
 │   ├── assets/             # Recursos multimedia y estilos globales.
-│   │   └── images/         # Imágenes del proyecto.
+│   │   └── images/   
 │   │       ├── anime/      # Imágenes de las portadas de los animes.
 │   │       └── personajes/ # Imágenes de los personajes principales.
 │   ├── components/         # Componentes reutilizables de React.
@@ -72,8 +68,8 @@ AnimeWorld/
 │   │   │   ├── Info/
 │   │   │   └── Reutilizacion/
 │   │   └── layout/         # Componentes estructurales (Header, Footer, Nav).
-│   ├── data/               # 💾 Origen de datos (Ej: animes.json o animes.ts).
+│   ├── data/               # 💾 Origen de datos (animes.ts).
 │   ├── types/              # 🧬 Definiciones de Tipos de TypeScript (Interfaces/Types).
 │   ├── App.tsx             # Componente principal de la aplicación.
-│   └── main.tsx          
+│   └── main.tsx  
 ```

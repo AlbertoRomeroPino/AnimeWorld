@@ -1,6 +1,6 @@
 import "./Header.css"
 
-export default function Header() {
+function Header() {
   const secciones: string[] = ["Inicio", "Series", "Peliculas", "Manga"];
 
   return (
@@ -16,3 +16,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header

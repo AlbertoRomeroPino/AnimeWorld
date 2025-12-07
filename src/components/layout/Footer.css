@@ -1,31 +1,76 @@
-/* Colores básicos */
+/* Footer.css */
+
+/* --- Variables de Color (Reutilizadas del Header) --- */
 :root {
-    --color-bg-dark: #0d6efd;  /* Fondo oscuro */
-    --color-text-light: #ecf0f1; /* Texto claro */
+  /* Asegura que las variables estén disponibles, aunque se recomienda definirlas globalmente */
+  --color-rojo-sombrero: #e50914; /* Rojo intenso */
+  --color-amarillo-tesoro: #ffc107; /* Amarillo dorado/pirata */
+  --color-azul-mar: #007bff; /* Azul marino/mar */
+  --color-fondo-oscuro: #212529; /* Fondo oscuro (cubierta del barco) */
+  --color-texto-claro: #f8f9fa; /* Texto claro */
 }
 
+/* --- Estilos del Contenedor Principal (footer) --- */
 .simple-footer {
-    background-color: var(--color-bg-dark);
-    color: var(--color-text-light);
-    padding: 15px 20px;
-    text-align: center;
-    width: 100%;
-    margin-top: auto; 
+  background-color: var(--color-fondo-oscuro);
+  /* Utiliza border-top para el anclaje visual, similar al border-bottom del header */
+  border-top: 5px solid var(--color-rojo-sombrero); 
+  padding: 15px 30px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5); /* Sombra hacia arriba para darle profundidad */
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  width: 100%;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  margin-top: auto; /* Ayuda a que se pegue a la parte inferior de la página */
 }
 
+/* --- Contenedor de Contenido (Alineación y Espacio) --- */
 .simple-footer__content {
-    max-width: 1000px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Espacio entre el nombre de la marca y el copyright */
+  align-items: center;
+  max-width: 1200px; /* Opcional: Centrar y limitar el ancho en pantallas grandes */
+  margin: 0 auto; 
 }
 
+/* --- Estilos del Nombre de la Marca (p.simple-footer__brand) --- */
 .simple-footer__brand {
-    font-size: 1.1em;
-    font-weight: 600;
-    margin: 5px 0;
+  color: var(--color-amarillo-tesoro); /* Título en amarillo dorado */
+  font-size: 2em; /* Un poco más pequeño que el título del header */
+  letter-spacing: 1px;
+  text-shadow: 
+    -1px -1px 0 var(--color-rojo-sombrero),  
+    1px -1px 0 var(--color-rojo-sombrero); /* Contorno simple para destacar */
+  margin: 0;
+  padding: 0;
 }
 
+/* --- Estilos del Texto de Copyright (p.simple-footer__copy) --- */
 .simple-footer__copy {
-    font-size: 0.85em;
-    margin: 0;
-    opacity: 0.8;
+  color: var(--color-texto-claro);
+  font-size: 1.1em;
+  margin: 0;
+  padding: 0;
+  /* El color azul marino le da un toque distintivo al año o un elemento clave */
+  color: var(--color-azul-mar); 
+}
+
+/* --- Media Query para dispositivos más pequeños (igual que el header) --- */
+@media (max-width: 768px) {
+  .simple-footer {
+    padding: 10px 15px;
+  }
+  
+  .simple-footer__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .simple-footer__brand {
+    margin-bottom: 5px;
+    font-size: 1.8em;
+  }
+
+  .simple-footer__copy {
+    font-size: 1em;
+  }
 }

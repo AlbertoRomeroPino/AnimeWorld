@@ -1,26 +1,109 @@
-/* === HEADER === */
+/* Header.css */
+
+/* --- Variables de Color (Inspiradas en One Piece) --- */
+:root {
+  --color-rojo-sombrero: #e50914; /* Rojo intenso como el sombrero de paja */
+  --color-amarillo-tesoro: #ffc107; /* Amarillo dorado/pirata */
+  --color-azul-mar: #007bff; /* Azul marino/mar */
+  --color-fondo-oscuro: #212529; /* Fondo oscuro (cubierta del barco) */
+  --color-texto-claro: #f8f9fa; /* Texto claro */
+}
+
+/* --- Estilos del Contenedor Principal (header) --- */
 .header {
-  background-color: #0d6efd;
-  color: white;
+  background-color: var(--color-fondo-oscuro);
+  border-bottom: 5px solid var(--color-rojo-sombrero); /* Borde rojo llamativo */
   padding: 15px 30px;
-}
-
-.header__title {
-  margin: 0;
-}
-
-.header__nav ul {
   display: flex;
-  list-style: none;
-  gap: 15px;
-  padding: 0;
+  justify-content: space-between; /* Espacio entre el título y la navegación */
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+  font-family: 'Bebas Neue', cursive, sans-serif; /* Tipografía fuerte y aventurera */
+  position: sticky;
+  top: -10;
+  z-index: 1000;
 }
 
-.header__nav li {
+/* --- Estilos del Título (h1) --- */
+.header__title {
+  color: var(--color-amarillo-tesoro); /* Título en amarillo dorado */
+  font-size: 3em;
+  letter-spacing: 2px;
+  text-shadow: 
+    -1px -1px 0 var(--color-rojo-sombrero),  
+    1px -1px 0 var(--color-rojo-sombrero),
+    -1px 1px 0 var(--color-rojo-sombrero),
+    1px 1px 0 var(--color-rojo-sombrero); /* Contorno para hacerlo destacar */
+  margin: 0;
   cursor: pointer;
-  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
 }
 
+.header__title:hover {
+  transform: scale(1.05); /* Pequeño efecto de zoom al pasar el ratón */
+  color: var(--color-texto-claro);
+}
+
+/* --- Estilos de la Navegación (nav) --- */
+.header__nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px; /* Espacio entre los elementos de la lista */
+}
+
+/* --- Estilos de los Elementos de la Lista (li) --- */
+.header__nav li {
+  color: var(--color-texto-claro);
+  font-size: 1.4em;
+  cursor: pointer;
+  padding: 5px 10px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Efecto de 'Tesoro Desbloqueado' al pasar el ratón */
 .header__nav li:hover {
-  text-decoration: underline;
+  color: var(--color-amarillo-tesoro);
+}
+
+/* Línea de 'Tesoro' debajo del elemento al pasar el ratón */
+.header__nav li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: var(--color-rojo-sombrero);
+  transition: width 0.3s ease, right 0.3s ease;
+}
+
+.header__nav li:hover::after {
+  width: 100%;
+  right: 0;
+  background: var(--color-rojo-sombrero);
+}
+
+/* --- Media Query para dispositivos más pequeños --- */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+
+  .header__title {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+  }
+
+  .header__nav ul {
+    gap: 15px;
+  }
+
+  .header__nav li {
+    font-size: 1.2em;
+  }
 }
