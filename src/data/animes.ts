@@ -52,7 +52,7 @@ export const animes: Anime[] = [
         nombre: "Saitama",
         genero: "Male",
         edad: 25,
-        Imagen_url: "./src/assets/images/Personajes/Saitama.jpg",
+        Imagen_url: "./images/Personajes/Saitama.jpg",
         descripcion:
           "Un héroe capaz de derrotar a cualquier enemigo de un solo golpe.",
         rol: "Protagonista",
@@ -61,7 +61,7 @@ export const animes: Anime[] = [
         nombre: "Genos",
         genero: "Male",
         edad: 19,
-        Imagen_url: "./src/assets/images/Personajes/Genos.jpg",
+        Imagen_url: "./images/Personajes/Genos.jpg",
         descripcion: "Un cyborg discípulo de Saitama.",
         rol: "Secundario",
       },
@@ -69,7 +69,7 @@ export const animes: Anime[] = [
     sinopsis:
       "Las aventuras de un héroe que, por su poder, se aburre de la vida.",
     fecha_estreno: "2015-10-05",
-    imagen_url: "./src/assets/images/anime/OnePuchMan.jpg",
+    imagen_url: "./images/Anime/OnePuchMan.jpg",
   },
   {
     id: 3,
@@ -91,7 +91,7 @@ export const animes: Anime[] = [
         nombre: "All Might",
         genero: "Male",
         edad: 50,
-        Imagen_url: "./src/assets/images/Personajes/AllMight.jpg",
+        Imagen_url: "./images/Personajes/AllMight.jpg",
         descripcion: "El Símbolo de la Paz.",
         rol: "Secundario",
       },
@@ -99,7 +99,7 @@ export const animes: Anime[] = [
     sinopsis:
       "En un mundo donde casi todos tienen superpoderes, un chico se esfuerza por ser un héroe.",
     fecha_estreno: "2016-04-03",
-    imagen_url: "./src/assets/images/anime/MyHeroAcademy.jpg",
+    imagen_url: "./images/Anime/MyHeroAcademy.jpg",
   },
   {
     id: 4,
@@ -113,7 +113,7 @@ export const animes: Anime[] = [
         nombre: "Eren Yeager",
         genero: "Male",
         edad: 19,
-        Imagen_url: "./src/assets/images/Personajes/ErenYeager.jpg",
+        Imagen_url: "./images/Personajes/ErenYeager.jpg",
         descripcion: "Protagonista con un destino trágico.",
         rol: "Protagonista",
       },
@@ -121,7 +121,7 @@ export const animes: Anime[] = [
     sinopsis:
       "La humanidad vive confinada tras muros para protegerse de los gigantes devoradores de hombres.",
     fecha_estreno: "2013-04-07",
-    imagen_url: "./src/assets/images/anime/AttackOnTitan.jpg",
+    imagen_url: "./images/Anime/AttackOnTitan.jpg",
   },
   {
     id: 5,
@@ -135,7 +135,7 @@ export const animes: Anime[] = [
         nombre: "Loid Forger",
         genero: "Male",
         edad: 30,
-        Imagen_url: "./src/assets/images/Personajes/LoidForger.jpg",
+        Imagen_url: "./images/Personajes/LoidForger.jpg",
         descripcion: "Un espía que necesita formar una familia falsa.",
         rol: "Protagonista",
       },
@@ -143,7 +143,7 @@ export const animes: Anime[] = [
     sinopsis:
       "Un espía, una asesina y una niña telépata forman una familia para mantener la paz mundial.",
     fecha_estreno: "2022-04-09",
-    imagen_url: "./src/assets/images/anime/SpyXFamily.jpg",
+    imagen_url: "./images/Anime/SpyXFamily.jpg",
   },
   {
     id: 6,
@@ -157,7 +157,7 @@ export const animes: Anime[] = [
         nombre: "Light Yagami",
         genero: "Male",
         edad: 17,
-        Imagen_url: "./src/assets/images/Personajes/LightYagami.jpg",
+        Imagen_url: "./images/Personajes/LightYagami.jpg",
         descripcion: "Un genio que encuentra la Death Note.",
         rol: "Protagonista",
       },
@@ -165,6 +165,60 @@ export const animes: Anime[] = [
     sinopsis:
       "Una batalla intelectual entre un estudiante y un detective, ambos con planes de justicia opuestos.",
     fecha_estreno: "2006-10-04",
-    imagen_url: "./src/assets/images/anime/DeathNote.jpg",
+    imagen_url: "./images/Anime/DeathNote.jpg",
+  },
+  {
+    id: 7, 
+    titulo: "Dr. Stone",
+    titulo_original: "Dr. STONE",
+    genero: ["Adventure", "SciFi", "Shonen"],
+    episodios: 57,
+    estado: "En emisión",
+    personajes: [
+      {
+        nombre: "Senku Ishigami",
+        genero: "Hombre",
+        edad: 18,
+        Imagen_url: "./images/Personajes/Senku.jpg",
+        descripcion: "Un genio científico que busca reconstruir la civilización desde cero.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Taiju Oki",
+        genero: "Hombre",
+        edad: 18,
+        Imagen_url: "./images/Personajes/Taiju.jpg",
+        descripcion: "El mejor amigo de Senku, posee una resistencia física inagotable.",
+        rol: "Secundario",
+      },
+      {
+        nombre: "Yuzuriha Ogawa",
+        genero: "Mujer",
+        edad: 18,
+        Imagen_url: "./images/Personajes/Yuzuriha.jpg",
+        descripcion: "Experta en artesanía y textiles, el interés amoroso de Taiju.",
+        rol: "Secundario",
+      },
+      {
+        nombre: "Tsukasa Shishio",
+        genero: "Hombre",
+        edad: 19,
+        Imagen_url: "./images/Personajes/Tsukasa.jpg",
+        descripcion: "El 'primate más fuerte de la secundaria', inicialmente se opone a la ciencia.",
+        rol: "Antagonista",
+      },
+      {
+        nombre: "Kohaku",
+        genero: "Mujer",
+        edad: 16,
+        Imagen_url: "./images/Personajes/Kohaku.jpg",
+        descripcion: "Una guerrera de la aldea Ishigami con una vista y agilidad excepcionales.",
+        rol: "Secundario",
+      },
+    ],
+    sinopsis:
+      "Un día fatídico, toda la humanidad queda petrificada por un destello de luz cegadora. Después de varios milenios, el estudiante de secundaria Taiju despierta y se encuentra perdido en un mundo de estatuas. Sin embargo, no está solo; su amigo amante de la ciencia, Senku, ha estado trabajando durante meses y tiene un gran plan en mente: ¡poner en marcha la civilización con el poder de la ciencia!",
+    fecha_estreno: "2019-07-05",
+    imagen_url: "./images/Anime/DrStone.jpg",
   },
 ];
