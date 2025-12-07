@@ -1,0 +1,41 @@
+/* El contenedor principal */
+.search-container {
+  position: relative; /* Necesario para que la lista flote justo debajo */
+  width: 100%;        /* O el ancho que prefieras, ej: 300px */
+}
+
+/* El input (la caja de texto) */
+.search-input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box; /* Para que el padding no deforme el ancho */
+}
+
+/* La lista de resultados (ul) */
+.search-results {
+  border: 1px solid #ccc;
+  list-style: none;       /* Quita los puntitos de la lista */
+  padding: 0;
+  margin: 0;              /* Quita margenes por defecto */
+  
+  /* Esto hace que la lista "flote" encima del contenido */
+  position: absolute;     
+  width: 100%;
+  z-index: 10;            /* Asegura que esté por encima de otras cosas */
+  background: white;      /* Fondo blanco para que no se transparente */
+  max-height: 200px;      /* Si hay muchos, limita la altura */
+  overflow-y: auto;       /* Y pon una barra de scroll */
+}
+
+/* Cada elemento de la lista (li) */
+.search-item {
+  padding: 10px;
+  cursor: pointer;        /* Pone la manita del ratón */
+  background: white;
+  border-bottom: 1px solid #eee; /* Una linea finita entre opciones */
+}
+
+/* Efecto al pasar el ratón por encima */
+.search-item:hover {
+  background-color: #f0f0f0; /* Gris clarito */
+}

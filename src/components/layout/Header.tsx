@@ -1,16 +1,19 @@
+import BarraDeBusqueda from "./BarraDeBusqueda";
 import "./Header.css"
 
-function Header() {
-  const secciones: string[] = ["Inicio", "Series", "Peliculas", "Manga"];
+interface HeaderProps{
+  setAnimeActual: React.Dispatch<React.SetStateAction<number>>
+  listaNombres: { id: number; titulo: string }[];
+}
+
+function Header({setAnimeActual, listaNombres} : HeaderProps) {
 
   return (
     <header className="header">
       <h1 className="header__title">Anime World</h1>
       <nav className="header__nav">
         <ul>
-          {secciones.map((seccion) => (
-            <li key={seccion}>{seccion}</li>
-          ))}
+          <BarraDeBusqueda setAnimeActual={setAnimeActual} listaNombres={listaNombres}/>
         </ul>
       </nav>
     </header>

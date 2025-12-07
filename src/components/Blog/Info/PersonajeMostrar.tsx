@@ -8,7 +8,7 @@ interface PersonajeMostrarProps {
 function PersonajeMostrar({ personaje }: PersonajeMostrarProps) {
   return (
     <section className="anime-detail-card__characters part-3">
-      <h3>Personaje Protagonista</h3>
+      <h3>{personaje.rol}</h3>
       <PintarPersonaje personaje={personaje}/>
     </section>
   );

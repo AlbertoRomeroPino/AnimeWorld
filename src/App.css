@@ -1,44 +1,28 @@
-/* App.css */
-
-/* --- Variables de Color (Necesario para el App.css si no está globalmente) --- */
-/* Si estas variables ya están en index.css, puedes omitir este bloque */
-:root {
-    --color-fondo-oscuro: #212529; /* Fondo oscuro (Cubierta del barco) */
-    --color-texto-claro: #f8f9fa; /* Texto claro */
+/* === GLOBAL === */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+  color: #333;
 }
 
-/* --- Estilos del Contenedor Raíz de la Aplicación --- */
 .app-container {
-    /* * Usa Flexbox en columna para organizar Header, Main y Footer verticalmente.
-     * min-height: 100vh asegura que el contenedor principal cubra toda la altura de la vista.
-     */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: var(--color-fondo-oscuro); /* Asegura que el fondo del cuerpo sea el color oscuro */
-    color: var(--color-texto-claro); /* Color de texto predeterminado para la aplicación */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* --- Estilos del Contenido Principal (Main) --- */
 .main-content {
-    /* * flex-grow: 1 es crucial. Esto hace que el elemento <main> crezca y 
-     * ocupe todo el espacio vertical disponible entre el Header y el Footer.
-     */
-    flex-grow: 1;
-    
-    /* Padding para dar espacio al contenido, evitando que toque los bordes */
-    padding: 20px;
-    
-    /* Centrado opcional si el contenido no ocupa todo el ancho */
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    box-sizing: border-box;
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  padding: 30px;
 }
 
-/* --- Estilo de Mensajes de Error/Info --- */
-.main-content p {
-    font-size: 1.2em;
-    text-align: center;
-    padding: 50px 0;
+/* === Layout de listados === */
+.related-posts__list,
+.category-posts__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }

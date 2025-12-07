@@ -1,0 +1,22 @@
+/* 1. Contenedor de la imagen */
+.character-card__image-container {
+  width: 100%;
+  height: 250px; /* Mantenemos una altura fija para que las tarjetas sean iguales */
+  background-color: #ffffff; /* Fondo blanco (o el color que prefieras) para los huecos vacíos */
+  overflow: hidden;
+  
+  /* Esto centra la imagen si sobra espacio a los lados o arriba */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 2. La imagen en sí */
+.character-card__image {
+  max-width: 100%; /* No permite que sea más ancha que el contenedor */
+  max-height: 100%; /* No permite que sea más alta que el contenedor */
+  width: auto; /* Deja que el ancho se ajuste solo */
+  height: auto; /* Deja que el alto se ajuste solo */
+  
+  object-fit: contain; /* IMPORTANTE: "Contener". Muestra toda la imagen sin cortar nada */
+}

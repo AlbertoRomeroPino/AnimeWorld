@@ -5,4 +5,5 @@ export type Personaje = {
     edad: number;
     Imagen_url: string;
     descripcion: string;
+    rol : string
 }
