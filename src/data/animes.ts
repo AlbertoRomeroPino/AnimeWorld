@@ -21,7 +21,7 @@ export const animes: Anime[] = [
         nombre: "Stark",
         genero: "Hombre",
         edad: 18,
-        Imagen_url: "./src/assets/images/Personajes/Stark.png",
+        Imagen_url: "./images/Personajes/Stark.png",
         descripcion: "El guerrero del nuevo grupo.",
         rol: "Secundario",
       },
@@ -29,15 +29,16 @@ export const animes: Anime[] = [
         nombre: "Fern",
         genero: "Mujer",
         edad: 18,
-        Imagen_url: "public/images/Personajes/Fern.png",
+        Imagen_url: "./images/Personajes/Fern.png",
         descripcion: "Una joven hechicera humana, aprendiz de Frieren.",
         rol: "Secundario",
       },
     ],
     sinopsis:
       "Frieren es una elfa maga que formó parte del Grupo del Héroe que derrotó al Rey Demonio. Tras una década de aventura, el grupo se disuelve. Debido a su longevidad milenaria, Frieren apenas percibe el paso del tiempo. Cincuenta años después, la muerte por vejez del héroe, Himmel, la golpea con un profundo arrepentimiento. Se da cuenta de que nunca se esforzó por comprender o valorar a sus compañeros humanos. Impulsada por este dolor, Frieren se embarca en un nuevo viaje de reflexión. Su objetivo es coleccionar recuerdos y comprender el significado de la vida humana. Acompañada por su joven aprendiz, la maga Fern, y más tarde por el guerrero Stark, Frieren recorre las mismas tierras. La serie se centra en sus interacciones, donde la elfa, normalmente distante, aprende sobre las emociones, los sueños y la efímera existencia de sus nuevos y viejos amigos. A través de frecuentes flashbacks, la serie da nuevo contexto a los pequeños momentos de su primera aventura. La historia es una meditación melancólica sobre la mortalidad, la amistad duradera y el valor del tiempo.",
+
     fecha_estreno: "2023-09-29",
-    imagen_url: "/images/anime/Frieren.jpg",
+    imagen_url: "./images/Anime/Frieren.jpg",
   },
   {
     id: 2,
