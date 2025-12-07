@@ -29,7 +29,7 @@ export const animes: Anime[] = [
         nombre: "Fern",
         genero: "Mujer",
         edad: 18,
-        Imagen_url: "./src/assets/images/Personajes/Fern.png",
+        Imagen_url: "images/Personajes/Fern.png",
         descripcion: "Una joven hechicera humana, aprendiz de Frieren.",
         rol: "Secundario",
       },
