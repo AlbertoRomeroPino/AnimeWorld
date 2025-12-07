@@ -1,7 +1,6 @@
 import type { Anime } from "../../../types/anime"
 import AnimePoster from "./AnimePoster"
 import ListaMetadatos from "./ListaMetadatos"
-import TagGenero from "./TagGenero"
 
 interface AnimeMetadatoProps{
     animeMostrado: Anime
