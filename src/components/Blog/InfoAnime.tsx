@@ -4,6 +4,7 @@ import AnimeDetail from "./Info/HeaderInfo";
 import AnimeSinopsis from "./Info/Sinopsis";
 import "./InfoAnime.css";
 import PersonajeMostrar from "./Info/PersonajeMostrar";
+import Comentarios from "./Info/Commentarios/Comentarios";
 
 interface InfoAnimeProps {
   animeMostrado: Anime;
@@ -12,7 +13,6 @@ interface InfoAnimeProps {
 
 function InfoAnime({ animeMostrado /*listadoAnime*/ }: InfoAnimeProps) {
   return (
-    // Utilizamos <article> para un contenido independiente y autocontenido
     <article className="anime-detail-card">
       <AnimeDetail animeMostrado={animeMostrado} />
 
@@ -24,7 +24,10 @@ function InfoAnime({ animeMostrado /*listadoAnime*/ }: InfoAnimeProps) {
         {/* 2. Bloque: Sinopsis */}
         <AnimeSinopsis sinopsis={animeMostrado.sinopsis} />
 
-        {/* 3. Bloque: Personajes */}
+        {/* 3. Bloque comentarios*/}
+        <Comentarios listacomentarios={animeMostrado.comentarios}/>
+
+        {/* 4. Bloque: Personajes */}
         <PersonajeMostrar personaje={animeMostrado.personajes[0]} />
       </div>
     </article>

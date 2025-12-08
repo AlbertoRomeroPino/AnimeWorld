@@ -8,6 +8,23 @@ export const animes: Anime[] = [
     genero: ["Fantasy", "Adventure", "Drama"],
     episodios: 28,
     estado: "Finalizado",
+    // --- 2 COMENTARIOS AÑADIDOS ---
+    comentarios: [
+      {
+        id: 1,
+        usuario: "Himmel_Fan",
+        texto: "La escena del amanecer me hizo llorar. Una obra maestra.",
+        meGustas: 125,
+        fecha: "2023-10-01"
+      },
+      {
+        id: 2,
+        usuario: "MagaFern",
+        texto: "El ritmo es lento pero muy satisfactorio. La banda sonora es increíble.",
+        meGustas: 89,
+        fecha: "2023-11-20"
+      }
+    ],
     personajes: [
       {
         nombre: "Frieren",
@@ -47,6 +64,16 @@ export const animes: Anime[] = [
     genero: ["Action", "Super Power", "Parody"],
     episodios: 24,
     estado: "En emisión",
+    // --- 1 COMENTARIO AÑADIDO ---
+    comentarios: [
+      {
+        id: 1,
+        usuario: "CapedBaldy",
+        texto: "Es imposible no reírse con Saitama. La mejor parodia de superhéroes.",
+        meGustas: 340,
+        fecha: "2016-02-15"
+      }
+    ],
     personajes: [
       {
         nombre: "Saitama",
@@ -78,12 +105,22 @@ export const animes: Anime[] = [
     genero: ["Shonen", "Action", "Super Power"],
     episodios: 138,
     estado: "En emisión",
+    // --- 1 COMENTARIO AÑADIDO ---
+    comentarios: [
+      {
+        id: 1,
+        usuario: "DekuFan01",
+        texto: "¡PLUS ULTRA! Me inspira a esforzarme cada día.",
+        meGustas: 210,
+        fecha: "2020-05-10"
+      }
+    ],
     personajes: [
       {
         nombre: "Izuku Midoriya",
         genero: "Male",
         edad: 16,
-        Imagen_url: "./src/assets/images/Personajes/Deku.jpg",
+        Imagen_url: "./images/Personajes/Deku.jpg",
         descripcion: "Un joven sin poder que hereda el Quirk One For All.",
         rol: "Protagonista",
       },
@@ -108,6 +145,16 @@ export const animes: Anime[] = [
     genero: ["Action", "Military", "Thriller"],
     episodios: 89,
     estado: "Finalizado",
+    // --- 1 COMENTARIO AÑADIDO ---
+    comentarios: [
+      {
+        id: 1,
+        usuario: "SurveyCorps",
+        texto: "Shinzou wo Sasageyo! La trama política es tan buena como la acción.",
+        meGustas: 550,
+        fecha: "2021-12-05"
+      }
+    ],
     personajes: [
       {
         nombre: "Eren Yeager",
@@ -130,6 +177,16 @@ export const animes: Anime[] = [
     genero: ["Comedy", "Action", "Shonen"],
     episodios: 37,
     estado: "En emisión",
+    // --- 1 COMENTARIO AÑADIDO ---
+    comentarios: [
+      {
+        id: 1,
+        usuario: "AnyaPeanuts",
+        texto: "Waku waku! Es la mezcla perfecta de comedia y acción.",
+        meGustas: 180,
+        fecha: "2022-06-01"
+      }
+    ],
     personajes: [
       {
         nombre: "Loid Forger",
@@ -152,6 +209,16 @@ export const animes: Anime[] = [
     genero: ["Mystery", "Psychological", "Supernatural"],
     episodios: 37,
     estado: "Finalizado",
+    // --- 1 COMENTARIO AÑADIDO ---
+    comentarios: [
+      {
+        id: 1,
+        usuario: "Kira_Justice",
+        texto: "El duelo intelectual entre Light y L es legendario.",
+        meGustas: 400,
+        fecha: "2010-08-20"
+      }
+    ],
     personajes: [
       {
         nombre: "Light Yagami",
@@ -168,19 +235,37 @@ export const animes: Anime[] = [
     imagen_url: "./images/Anime/DeathNote.jpg",
   },
   {
-    id: 7, 
+    id: 7,
     titulo: "Dr. Stone",
     titulo_original: "Dr. STONE",
     genero: ["Adventure", "SciFi", "Shonen"],
     episodios: 57,
     estado: "En emisión",
+    // --- 2 COMENTARIOS AÑADIDOS ---
+    comentarios: [
+      {
+        id: 1,
+        usuario: "ScienceKingdom",
+        texto: "¡Esto es emocionante al diez mil millones por ciento!",
+        meGustas: 1000,
+        fecha: "2019-08-10"
+      },
+      {
+        id: 2,
+        usuario: "ChromeScience",
+        texto: "Me encanta como explican la ciencia de forma tan divertida y lógica.",
+        meGustas: 450,
+        fecha: "2020-01-15"
+      }
+    ],
     personajes: [
       {
         nombre: "Senku Ishigami",
         genero: "Hombre",
         edad: 18,
         Imagen_url: "./images/Personajes/Senku.jpg",
-        descripcion: "Un genio científico que busca reconstruir la civilización desde cero.",
+        descripcion:
+          "Un genio científico que busca reconstruir la civilización desde cero.",
         rol: "Protagonista",
       },
       {
@@ -188,7 +273,17 @@ export const animes: Anime[] = [
         genero: "Hombre",
         edad: 18,
         Imagen_url: "./images/Personajes/Taiju.jpg",
-        descripcion: "El mejor amigo de Senku, posee una resistencia física inagotable.",
+        descripcion:
+          "El mejor amigo de Senku, posee una resistencia física inagotable.",
+        rol: "Secundario",
+      },
+      {
+        nombre: "Kaseki",
+        genero: "Hombre",
+        edad: 60,
+        Imagen_url: "./images/Personajes/Kaseki.jpg",
+        descripcion:
+          "Un viejo artesano de la aldea Ishigami con una habilidad divina para la construcción. Se vuelve extremadamente musculoso cuando se emociona por crear cosas nuevas.",
         rol: "Secundario",
       },
       {
@@ -196,7 +291,8 @@ export const animes: Anime[] = [
         genero: "Mujer",
         edad: 18,
         Imagen_url: "./images/Personajes/Yuzuriha.jpg",
-        descripcion: "Experta en artesanía y textiles, el interés amoroso de Taiju.",
+        descripcion:
+          "Experta en artesanía y textiles, el interés amoroso de Taiju.",
         rol: "Secundario",
       },
       {
@@ -204,16 +300,9 @@ export const animes: Anime[] = [
         genero: "Hombre",
         edad: 19,
         Imagen_url: "./images/Personajes/Tsukasa.jpg",
-        descripcion: "El 'primate más fuerte de la secundaria', inicialmente se opone a la ciencia.",
+        descripcion:
+          "El 'primate más fuerte de la secundaria', inicialmente se opone a la ciencia.",
         rol: "Antagonista",
-      },
-      {
-        nombre: "Kohaku",
-        genero: "Mujer",
-        edad: 16,
-        Imagen_url: "./images/Personajes/Kohaku.jpg",
-        descripcion: "Una guerrera de la aldea Ishigami con una vista y agilidad excepcionales.",
-        rol: "Secundario",
       },
     ],
     sinopsis:

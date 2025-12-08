@@ -1,3 +1,4 @@
+import type { Comentario } from "./comentario";
 import type { Genero } from "./genero";
 import type { Personaje } from "./personage";
 
@@ -9,6 +10,7 @@ export type Anime = {
     genero: Genero[]
     episodios: number;
     estado: string;
+    comentarios: Comentario[]
     personajes: Personaje[];
     sinopsis: string;
     fecha_estreno: string;
