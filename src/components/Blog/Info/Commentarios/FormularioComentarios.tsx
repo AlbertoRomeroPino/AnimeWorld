@@ -5,9 +5,7 @@ interface FormularioComentariosProps {
   insertarComentario: (usuario: string, texto: string) => void;
 }
 
-function FormularioComentarios({
-  insertarComentario,
-}: FormularioComentariosProps) {
+function FormularioComentarios({insertarComentario,}: FormularioComentariosProps) {
   const [nombre, setNombre] = useState("");
   const [comentario, setComentario] = useState("");
 

@@ -1,29 +1,24 @@
-/* Variables CSS (opcional, para gestión de colores) */
+/* Variables CSS */
 :root {
-  --color-primary: #1e3a8a; /* Azul oscuro */
-  --color-secondary: #3b82f6; /* Azul brillante */
-  --color-background: #f3f4f6; /* Gris claro */
-  --color-card-bg: #ffffff; /* Blanco */
-  --color-text: #1f2937; /* Gris muy oscuro */
-  --color-light-text: #6b7280; /* Gris medio */
+  --color-primary: #1e3a8a;
+  --color-secondary: #3b82f6;
+  --color-background: #f3f4f6;
+  --color-card-bg: #ffffff;
+  --color-text: #1f2937;
+  --color-light-text: #6b7280;
   --border-radius: 8px;
 }
 
-/* --- ESTILOS GENERALES Y LAYOUT --- */
-
-
-
-/* Contenedor principal de la tarjeta de detalle */
+/* --- ESTILOS GENERALES --- */
 .anime-detail-card {
-  max-width: 1000px;
+  max-width: 1200px; /* Aumenté un poco el ancho total (de 1100 a 1200) para dar espacio al sidebar más ancho */
   margin: 0 auto;
   padding: 30px;
   background-color: var(--color-card-bg);
   border-radius: var(--border-radius);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  font-family: system-ui, -apple-system, sans-serif;
 }
-
-/* --- CABECERA (TÍTULOS) --- */
 
 .anime-detail-card__header {
   border-bottom: 2px solid var(--color-background);
@@ -31,57 +26,50 @@
   margin-bottom: 25px;
 }
 
-.anime-detail-card__title {
-  color: var(--color-primary);
-  font-size: 2.5em;
-  font-weight: 700;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.anime-detail-card__subtitle {
-  color: var(--color-light-text);
-  font-size: 1.2em;
-  font-weight: 400;
-  margin-top: 5px;
-}
-
-/* --- CONTENIDO (IMAGEN Y DATOS) --- */
-
+/* --- LAYOUT DEL CONTENIDO (Móvil First) --- */
 .anime-detail-card__content {
   display: flex;
-  flex-direction: column; /* Por defecto, apilado para móviles */
-  gap: 30px;
+  flex-direction: column;
+  gap: 40px;
 }
 
+.anime-detail-card__content > * {
+  width: 100%; 
+}
+
+/* Títulos h3 genéricos */
+.anime-detail-card__content h3 {
+  color: var(--color-primary);
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--color-background);
+  padding-bottom: 5px;
+}
+
+/* --- ESTILOS COMPONENTES INDIVIDUALES --- */
+
+/* 1. Metadata e Imagen */
 .anime-detail-card__media-info {
   display: flex;
-  gap: 30px;
-  flex-wrap: wrap; /* Permite que la imagen y los datos se envuelvan en pantallas pequeñas */
-}
-
-/* Estilo para la imagen del póster */
-.anime-detail-card__poster {
-  flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
-  margin: 0;
-  width: 100%; /* Por defecto, ocupa todo el ancho */
-  max-width: 300px; /* Ancho máximo para el póster */
+  flex-direction: column;
+  gap: 15px;
 }
 
 .anime-detail-card__image {
   width: 100%;
+  max-width: 100%; /* Ahora ocupará todo el ancho del nuevo sidebar más grande */
   height: auto;
   border-radius: var(--border-radius);
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; 
+  display: block;
 }
 
-/* Estilos para los metadatos (Episodios, Género, etc.) */
 .anime-detail-card__metadata {
   list-style: none;
   padding: 0;
-  margin: 0;
-  flex-grow: 1; /* Ocupa el espacio restante junto a la imagen */
 }
 
 .anime-detail-card__meta-item {
@@ -94,87 +82,74 @@
 .anime-detail-card__meta-label {
   font-weight: 600;
   color: var(--color-text);
-  margin-right: 15px;
 }
 
 .anime-detail-card__meta-value {
   color: var(--color-secondary);
   font-weight: 500;
-  text-align: right;
 }
 
-/* --- SINOPSIS --- */
-
-.anime-detail-card__synopsis h3 {
-  color: var(--color-primary);
-  font-size: 1.5em;
-  margin-top: 0;
-  border-bottom: 1px solid var(--color-background);
-  padding-bottom: 5px;
-}
-
-.anime-detail-card__text {
-  line-height: 1.6;
-  color: var(--color-text);
-  text-align: justify;
-}
-
-/* --- PERSONAJES --- */
-
-.anime-detail-card__characters h3 {
-  color: var(--color-primary);
-  font-size: 1.5em;
-  margin-top: 0;
-  border-bottom: 1px solid var(--color-background);
-  padding-bottom: 5px;
-}
-
-.anime-detail-card__character-figure {
-  display: inline-block;
-  text-align: center;
-  margin: 10px 0;
-}
-
+/* 4. Personajes */
 .anime-detail-card__character-image {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 50%; /* Para hacer la imagen redonda */
-  border: 4px solid var(--color-secondary);
+  border-radius: 50%;
+  border: 3px solid var(--color-secondary);
 }
 
-.anime-detail-card__character-name {
-  display: block;
-  margin-top: 10px;
-  font-weight: 600;
-  color: var(--color-text);
-}
+/* =========================================
+   MEDIA QUERY: PC / TABLET GRANDE
+   ========================================= */
 
-
-/* --- ADAPTACIÓN A PANTALLAS GRANDES (MEDIA QUERIES) --- */
-
-@media (min-width: 768px) {
+@media (min-width: 900px) {
+  
   .anime-detail-card__content {
-    /* En pantallas grandes, la imagen y los datos se ven mejor en la columna lateral */
     display: grid;
-    grid-template-columns: 300px 1fr; /* Una columna para la imagen y otra para el contenido */
-    gap: 40px;
+    
+    /* CAMBIO AQUÍ: Subí de 320px a 400px */
+    /* Columna 1 (Sidebar): 400px */
+    /* Columna 2 (Contenido): 1fr (lo que sobre) */
+    grid-template-columns: 400px 1fr;
+    
+    /* Mantenemos el gap */
+    gap: 30px 40px; 
+    align-items: start;
   }
 
-  .anime-detail-card__media-info {
-    flex-direction: column; /* Apila la imagen y los metadatos en la columna izquierda */
-    gap: 20px;
-    grid-column: 1 / 2; /* Coloca esta sección en la primera columna */
+  /* --- ORDENAMIENTO (Sin cambios, mantiene el truco del span) --- */
+
+  /* 1. METADATA -> Columna 1, ocupa 2 filas */
+  .anime-detail-card__content > :nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2; 
+  }
+
+  /* 2. SINOPSIS -> Columna 2, Fila 1 */
+  .anime-detail-card__content > :nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    margin-bottom: 0;
+  }
+
+  /* 3. COMENTARIOS -> Columna 1, Fila 3 */
+  .anime-detail-card__content > :nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 3;
+    
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 2px solid var(--color-background);
+  }
+
+  /* 4. PERSONAJE -> Columna 2, Fila 2 */
+  .anime-detail-card__content > :nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2; 
   }
   
-  .anime-detail-card__poster {
-    width: 100%;
-    max-width: none; /* Desactivamos el max-width para que ocupe el 100% de la celda */
-  }
-
-  /* El resto de las secciones (Sinopsis, Personajes) ocuparán la columna derecha */
-  .anime-detail-card__synopsis,
-  .anime-detail-card__characters {
-    grid-column: 2 / 3;
+  .anime-detail-card__image {
+    max-width: 100%;
+    margin: 0;
   }
 }

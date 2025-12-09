@@ -1,0 +1,72 @@
+/* Contenedor principal */
+.comentarios-contenedor {
+  width: 100%; /* Ahora ocupa el 100% del padre (la columna izquierda) */
+  max-width: 100%; 
+  margin: 1rem 0; /* Margen reducido */
+  padding: 1rem;  /* Padding reducido de 2rem a 1rem para que quepa mejor */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+  font-family: system-ui, -apple-system, sans-serif;
+  box-sizing: border-box; /* Importante para que el padding no rompa el ancho */
+}
+
+/* Título */
+h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.2rem; /* Un poco más pequeño para encajar mejor */
+  text-align: center;
+}
+
+/* El formulario en sí */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; 
+}
+
+/* Estilos compartidos para input y textarea */
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px 12px; /* Padding un poco más pequeño */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  outline: none;
+  border-color: #6c5ce7; 
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.1);
+}
+
+.comment-form textarea {
+  min-height: 80px; /* Reducido un poco la altura mínima */
+  resize: vertical; 
+}
+
+/* Botón de envío */
+.comment-form button {
+  padding: 10px 20px;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%; /* Botón ancho completo para móviles/columnas estrechas */
+}
+
+.comment-form button:hover {
+  background-color: #5a4ad1; 
+}
