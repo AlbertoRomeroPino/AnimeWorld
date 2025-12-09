@@ -1,11 +1,32 @@
+import "./CarruselAnime.css";
+import AnimePoster from "./Reutilizacion/AnimePoster";
 
-function CarruselAnime(){
+interface CarruselAnimeProps {
+  listaCarrusel: {
+    imagen_url: string;
+    titulo: string;
+  }[];
+}
 
-    return(
-        <h1>Carrusel Imagenes</h1>
+function CarruselAnime({ listaCarrusel }: CarruselAnimeProps) {
+  return (
+  <section className="carousel-container">
+      <h2 className="carousel-title">Tendencias</h2>
+      
+      {/* Riel con scroll horizontal */}
+      <div className="carousel-track">
+        {listaCarrusel.map((anime, index) => (
+           
+           <AnimePoster 
+                key={index}
+                titulo={anime.titulo} 
+                imagen_url={anime.imagen_url} 
+             />
+        ))}
+      </div>
+    </section>
 
-    )
-
+  )
 }
 
 export default CarruselAnime;

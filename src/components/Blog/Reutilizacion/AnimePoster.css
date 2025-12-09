@@ -1,0 +1,32 @@
+/* Estilos base para el póster de anime */
+.anime-detail-card__poster{
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.anime-detail-card__image{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+/* Tamaño por defecto (usado fuera del carrusel) */
+.anime-detail-card__poster { width: 140px; }
+.anime-detail-card__poster .anime-detail-card__image { height: 200px; }
+
+/* Cuando el poster se usa dentro del carrusel, lo hacemos más grande */
+.carousel-track .anime-detail-card__poster{
+  flex: 0 0 auto;
+  width: 180px; /* ancho medio por defecto */
+}
+.carousel-track .anime-detail-card__image{
+  height: 260px; /* altura media */
+}
+
+@media (min-width: 768px){
+  .carousel-track .anime-detail-card__poster{ width: 200px; }
+  .carousel-track .anime-detail-card__image{ height: 300px; }
+}

@@ -1,3 +1,5 @@
+import "./AnimePoster.css";
+
 interface AnimePosterProps{
     titulo: string
     imagen_url: string
