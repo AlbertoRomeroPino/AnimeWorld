@@ -1,14 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Comentario } from "../../../../types/comentario";
 import FormularioComentarios from "./FormularioComentarios";
-import "./Comentarios.css";
+import "./Comentarios.css"
 
 interface ComentariosProps {
   listacomentarios: Comentario[];
 }
 
 function Comentarios({ listacomentarios }: ComentariosProps) {
-  const [comentarios, setComentarios] = useState(listacomentarios);
+  // Inicializamos el estado con las props
+  const [comentarios, setComentarios] =
+    useState<Comentario[]>(listacomentarios);
+
+  // ✅ SOLUCIÓN CRÍTICA: Sincronizar estado cuando cambian las props
+  // Si cambias de serie, 'listacomentarios' cambia, y este efecto actualiza el estado local.
+  useEffect(() => {
+    setComentarios(listacomentarios);
+  }, [listacomentarios]);
 
   function insertarComentario(usuario: string, texto: string) {
     const nuevoComentario: Comentario = {

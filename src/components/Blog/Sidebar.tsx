@@ -9,9 +9,8 @@ function Sidebar({ListPersonajes} : SidebarProps){
 
     return(
         <aside className="sidebar">
-            
             {
-                ListPersonajes.map((personaje) => (
+                ListPersonajes.slice(0,3).map((personaje) => (
                     <>
                     <h1>{personaje.rol}</h1>
                     <PintarPersonaje key={personaje.nombre} personaje={personaje} />

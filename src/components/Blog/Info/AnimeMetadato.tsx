@@ -1,5 +1,5 @@
 import type { Anime } from "../../../types/anime"
-import AnimePoster from "./AnimePoster"
+import AnimePoster from "../Reutilizacion/AnimePoster"
 import ListaMetadatos from "./ListaMetadatos"
 
 interface AnimeMetadatoProps{
