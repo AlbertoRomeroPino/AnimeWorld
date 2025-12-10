@@ -20,3 +20,48 @@
   
   object-fit: contain; /* IMPORTANTE: "Contener". Muestra toda la imagen sin cortar nada */
 }
+
+/* 3. Rol del personaje */
+.character-card__role {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2e86de;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin: 0 0 4px 0;
+}
+
+/* 4. Nombre del personaje */
+.character-card__name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+}
+
+/* 5. Detalles (género y edad) */
+.character-card__details {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* 6. Insignia (badge) para género y edad */
+.character-card__badge {
+  display: inline-block;
+  background-color: #e5e7eb;
+  color: #555;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* 7. Descripción del personaje */
+.character-card__description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+  text-align: justify;
+}

@@ -1,3 +1,5 @@
+import "./Sinopsis.css";
+
 interface AnimeSinopsisProps{
     sinopsis: string
 }

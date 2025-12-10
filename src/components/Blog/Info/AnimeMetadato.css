@@ -1,0 +1,48 @@
+/* AnimeMetadato.css - Contenedor de metadatos e imagen del anime */
+
+.anime-detail-card__media-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 5px solid #e50914;
+}
+
+.anime-detail-card__media-info.part-1 {
+  width: 100%;
+}
+
+/* Imagen del anime */
+.anime-detail-card__image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.anime-detail-card__image:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .anime-detail-card__media-info {
+    padding: 15px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .anime-detail-card__media-info {
+    padding: 12px;
+    gap: 12px;
+  }
+}

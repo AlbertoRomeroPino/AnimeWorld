@@ -1,5 +1,6 @@
 import type { Personaje } from "../../../types/personage";
 import PintarPersonaje from "../Reutilizacion/PintarPersonaje";
+import "./PersonajeMostrar.css";
 
 interface PersonajeMostrarProps {
   personaje: Personaje;

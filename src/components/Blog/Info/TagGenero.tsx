@@ -1,3 +1,5 @@
+import "./TagGenero.css";
+
 interface TagGeneroProps {
     generos: string[];
 }

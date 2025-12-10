@@ -9,8 +9,6 @@ interface ComentariosProps {
 }
 
 function Comentarios({ listacomentarios }: ComentariosProps) {
-  
-
   // Inicializamos el estado con las props
   const [comentarios, setComentarios] =
     useState<Comentario[]>(listacomentarios);
@@ -32,8 +30,6 @@ function Comentarios({ listacomentarios }: ComentariosProps) {
     setComentarios([...comentarios, nuevoComentario]);
   }
 
-  
-
   return (
     <>
       <div className="comments-section">
@@ -47,18 +43,20 @@ function Comentarios({ listacomentarios }: ComentariosProps) {
               </div>
               <div className="comment-body">{comentario.texto}</div>
               <div className="comment-actions">
-                <BotonMegusta comentario={comentario}/>
+                <BotonMegusta key={comentario.id} comentario={comentario} />
               </div>
             </li>
           ))}
         </ul>
 
         {/* Pasamos la función al hijo */}
-        {<FormularioComentarios 
-          insertarComentario={insertarComentario}
-          colorBotón="#2e86de"
-          mostrarTitulo={false}
-        />}
+        {
+          <FormularioComentarios
+            insertarComentario={insertarComentario}
+            colorBotón="#2e86de"
+            mostrarTitulo={false}
+          />
+        }
       </div>
     </>
   );

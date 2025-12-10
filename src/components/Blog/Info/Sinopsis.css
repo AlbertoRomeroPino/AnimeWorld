@@ -1,0 +1,62 @@
+/* Sinopsis.css - Sección de sinopsis del anime */
+
+.anime-detail-card__synopsis {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 5px solid #e50914;
+  transition: all 0.3s ease;
+}
+
+.anime-detail-card__synopsis:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.anime-detail-card__synopsis h3 {
+  color: #1e3a8a;
+  font-size: 1.5rem;
+  margin: 0 0 15px 0;
+  border-bottom: 2px solid #2e86de;
+  padding-bottom: 10px;
+}
+
+.anime-detail-card__text {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify;
+  word-break: break-word;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .anime-detail-card__synopsis {
+    padding: 20px;
+  }
+
+  .anime-detail-card__synopsis h3 {
+    font-size: 1.3rem;
+  }
+
+  .anime-detail-card__text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .anime-detail-card__synopsis {
+    padding: 15px;
+  }
+
+  .anime-detail-card__synopsis h3 {
+    font-size: 1.1rem;
+  }
+
+  .anime-detail-card__text {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+}

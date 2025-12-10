@@ -1,5 +1,6 @@
 import type { Anime } from "../../../types/anime"
 import TagGenero from "./TagGenero"
+import "./ListaMetadatos.css"
 
 interface ListaMetadatosProps{
     animeMostrado : Anime

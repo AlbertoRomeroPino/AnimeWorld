@@ -1,29 +1,84 @@
-/* Estilos para el carrusel de pósters */
-.carousel-container{
-  padding: 12px 8px;
+/* CarruselAnime.css - Carrusel de imágenes de anime */
+
+.carousel-container {
+  width: 100%;
+  padding: 20px 0;
 }
 
-.carousel-title{
-  font-size: 1.25rem;
-  margin: 0 0 8px 8px;
+.carousel-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffc107;
+  margin: 0 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #e50914, 1px -1px 0 #e50914, -1px 1px 0 #e50914, 1px 1px 0 #e50914;
 }
 
-.carousel-track{
+.carousel-track {
   display: flex;
-  gap: 12px;
+  gap: 20px;
   overflow-x: auto;
-  padding: 8px;
+  scroll-behavior: smooth;
+  padding: 10px 0;
   scroll-snap-type: x proximity;
   -webkit-overflow-scrolling: touch;
 }
 
-.carousel-track .anime-detail-card__poster{
+.carousel-track .anime-detail-card__poster {
   scroll-snap-align: start;
+  flex: 0 0 auto;
+  min-width: 120px;
+  transition: all 0.3s ease;
 }
 
-/* Ajustes estéticos del scrollbar en navegadores WebKit */
-.carousel-track::-webkit-scrollbar{ height: 8px; }
-.carousel-track::-webkit-scrollbar-thumb{ background: rgba(0,0,0,0.2); border-radius: 4px; }
+.carousel-track .anime-detail-card__poster:hover {
+  transform: scale(1.1) translateY(-4px);
+}
 
-/* Sutil hover para destacar el póster en desktop */
-.carousel-track .anime-detail-card__poster:hover{ transform: translateY(-4px); transition: transform 150ms ease; }
+/* Ocultar scrollbar pero permitir scroll */
+.carousel-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel-track::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 10px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-title {
+    font-size: 1.4rem;
+  }
+
+  .carousel-track {
+    gap: 15px;
+  }
+
+  .carousel-track .anime-detail-card__poster {
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-title {
+    font-size: 1.2rem;
+  }
+
+  .carousel-track {
+    gap: 10px;
+  }
+
+  .carousel-track .anime-detail-card__poster {
+    min-width: 80px;
+  }
+}

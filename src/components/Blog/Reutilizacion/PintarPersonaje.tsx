@@ -19,6 +19,7 @@ function PintarPersonaje({ personaje }: PintarPersonajeProps) {
 
       {/* Sección de la información */}
       <div className="character-card__content">
+        <h3 className="character-card__role">{personaje.rol}</h3>
         <h3 className="character-card__name">{personaje.nombre}</h3>
 
         <div className="character-card__details">

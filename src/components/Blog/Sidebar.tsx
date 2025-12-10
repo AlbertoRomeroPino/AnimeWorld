@@ -1,5 +1,6 @@
 import type { Personaje } from "../../types/personage";
 import PintarPersonaje from "./Reutilizacion/PintarPersonaje";
+import "./Sidebar.css";
 
 interface SidebarProps{
     ListPersonajes : Personaje[]

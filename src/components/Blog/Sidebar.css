@@ -1,0 +1,144 @@
+/* Sidebar.css - Barra lateral con personajes destacados */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0 8px 0 0; /* pequeño espacio a la derecha para que el scrollbar no tape contenido */
+  box-sizing: border-box;
+}
+
+.sidebar h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffc107;
+  margin: 0;
+  padding-bottom: 8px;
+  text-shadow: -1px -1px 0 #e50914, 1px -1px 0 #e50914, -1px 1px 0 #e50914, 1px 1px 0 #e50914;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Las tarjetas que vienen de `PintarPersonaje` usan la clase .character-card.
+   Aseguramos que dentro del sidebar se muestren como tarjetas blancas legibles */
+.sidebar .character-card,
+.sidebar section {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-left: 5px solid #e50914;
+  transition: all 0.18s ease;
+  color: #222; /* texto oscuro dentro de las tarjetas */
+}
+
+.sidebar .character-card {
+  display: block;
+}
+
+.sidebar .character-card__image-container {
+  height: 160px; /* más pequeño que la versión grande para que encaje en el sidebar */
+}
+
+.sidebar .character-card__image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar .character-card__content {
+  padding-top: 8px;
+  text-align: left;
+}
+
+.sidebar .character-card__role {
+  margin: 0 0 4px 0;
+  color: #1e3a8a;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.sidebar .character-card__name {
+  margin: 0 0 6px 0;
+  color: #1f2937;
+  font-size: 1rem;
+}
+
+.sidebar .character-card__description {
+  margin: 6px 0 0 0;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.sidebar section:hover,
+.sidebar .character-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+  transform: translateY(-2px);
+}
+
+.sidebar h1:first-of-type {
+  margin-top: 0;
+}
+
+/* Si el sidebar tiene mucho contenido, agregar scroll */
+.sidebar {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 6px; /* espacio extra interno para evitar que el scrollbar tape contenido */
+}
+
+/* Scrollbar styling */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #151515;
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg,#667eea,#764ba2);
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg,#7f7ff0,#8b6adf);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .sidebar {
+    gap: 16px;
+  }
+
+  .sidebar h1 {
+    font-size: 1.05rem;
+  }
+
+  .sidebar .character-card,
+  .sidebar section {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    gap: 12px;
+    max-height: none;
+  }
+
+  .sidebar h1 {
+    font-size: 1rem;
+    padding-bottom: 6px;
+  }
+
+  .sidebar .character-card,
+  .sidebar section {
+    padding: 8px;
+  }
+}

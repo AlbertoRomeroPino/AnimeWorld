@@ -1,0 +1,98 @@
+/* ListaMetadatos.css - Lista de metadatos del anime */
+
+.anime-detail-card__metadata {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.anime-detail-card__meta-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px dashed #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.anime-detail-card__meta-item:hover {
+  background-color: #f9fafb;
+  transform: translateX(5px);
+}
+
+.anime-detail-card__meta-item:last-child {
+  border-bottom: none;
+}
+
+.anime-detail-card__meta-label {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.anime-detail-card__meta-value {
+  color: #2e86de;
+  font-weight: 500;
+  font-size: 0.95rem;
+  max-width: 60%;
+  text-align: right;
+  word-break: break-word;
+}
+
+/* Géneros - Tags inline */
+.anime-detail-card__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.anime-detail-card__genre-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.anime-detail-card__genre-tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .anime-detail-card__meta-item {
+    padding: 12px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .anime-detail-card__meta-value {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .anime-detail-card__meta-label {
+    font-size: 0.9rem;
+  }
+
+  .anime-detail-card__genre-tag {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .anime-detail-card__meta-item {
+    padding: 10px 0;
+  }
+
+  .anime-detail-card__genres {
+    gap: 6px;
+  }
+}

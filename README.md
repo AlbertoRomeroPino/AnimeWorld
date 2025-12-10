@@ -1,3 +1,4 @@
+
 🎌 Galería de Anime — Práctica 3.1 React (Componentes y Estado)
 
 ![React](https://img.shields.io/badge/React-18-blue?logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-Enabled-3178C6?logo=typescript) ![Vite](https://img.shields.io/badge/Build-Vite-purple) ![Estado](https://img.shields.io/badge/Status-Completado-success)
@@ -20,7 +21,6 @@ Aplicación React que simula una **galería interactiva de animes**, permitiendo
 - 📱 Interfaz responsive con componentes reutilizables
 
 **Temática:** Galería de anime.
-
 
 ## 📁 ESTRUCTURA FINAL DEL PROYECTO
 

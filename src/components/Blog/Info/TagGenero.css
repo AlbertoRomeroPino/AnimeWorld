@@ -1,0 +1,65 @@
+/* TagGenero.css - Etiquetas de género para anime */
+
+.anime-detail-card__meta-item .anime-detail-card__meta-value span {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+  cursor: default;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+}
+
+.anime-detail-card__meta-item .anime-detail-card__meta-value span:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Variantes de colores según género */
+.anime-detail-card__meta-value span:nth-child(1) {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.anime-detail-card__meta-value span:nth-child(2) {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.anime-detail-card__meta-value span:nth-child(3) {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.anime-detail-card__meta-value span:nth-child(4) {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+.anime-detail-card__meta-value span:nth-child(5) {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.anime-detail-card__meta-value span:nth-child(n+6) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .anime-detail-card__meta-item .anime-detail-card__meta-value span {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .anime-detail-card__meta-item .anime-detail-card__meta-value span {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+}

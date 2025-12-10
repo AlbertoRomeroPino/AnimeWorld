@@ -1,6 +1,7 @@
 import type { Anime } from "../../../types/anime"
 import AnimePoster from "../Reutilizacion/AnimePoster"
 import ListaMetadatos from "./ListaMetadatos"
+import "./AnimeMetadato.css"
 
 interface AnimeMetadatoProps{
     animeMostrado: Anime

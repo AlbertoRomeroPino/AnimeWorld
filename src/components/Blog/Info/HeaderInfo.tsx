@@ -1,4 +1,5 @@
 import type { Anime } from "../../../types/anime";
+import "./HeaderInfo.css";
 
 interface AnimeDetailProps {
   animeMostrado: Anime;

@@ -8,7 +8,6 @@ export const animes: Anime[] = [
     genero: ["Fantasy", "Adventure", "Drama"],
     episodios: 28,
     estado: "Finalizado",
-    // --- 2 COMENTARIOS AÑADIDOS ---
     comentarios: [
       {
         id: 1,
@@ -53,7 +52,6 @@ export const animes: Anime[] = [
     ],
     sinopsis:
       "Frieren es una elfa maga que formó parte del Grupo del Héroe que derrotó al Rey Demonio. Tras una década de aventura, el grupo se disuelve. Debido a su longevidad milenaria, Frieren apenas percibe el paso del tiempo. Cincuenta años después, la muerte por vejez del héroe, Himmel, la golpea con un profundo arrepentimiento. Se da cuenta de que nunca se esforzó por comprender o valorar a sus compañeros humanos. Impulsada por este dolor, Frieren se embarca en un nuevo viaje de reflexión. Su objetivo es coleccionar recuerdos y comprender el significado de la vida humana. Acompañada por su joven aprendiz, la maga Fern, y más tarde por el guerrero Stark, Frieren recorre las mismas tierras. La serie se centra en sus interacciones, donde la elfa, normalmente distante, aprende sobre las emociones, los sueños y la efímera existencia de sus nuevos y viejos amigos. A través de frecuentes flashbacks, la serie da nuevo contexto a los pequeños momentos de su primera aventura. La historia es una meditación melancólica sobre la mortalidad, la amistad duradera y el valor del tiempo.",
-
     fecha_estreno: "2023-09-29",
     imagen_url: "./images/Anime/Frieren.jpg",
   },
@@ -64,10 +62,9 @@ export const animes: Anime[] = [
     genero: ["Action", "Super Power", "Parody"],
     episodios: 24,
     estado: "En emisión",
-    // --- 1 COMENTARIO AÑADIDO ---
     comentarios: [
       {
-        id: 1,
+        id: 3,
         usuario: "CapedBaldy",
         texto: "Es imposible no reírse con Saitama. La mejor parodia de superhéroes.",
         meGustas: 340,
@@ -105,10 +102,9 @@ export const animes: Anime[] = [
     genero: ["Shonen", "Action", "Super Power"],
     episodios: 138,
     estado: "En emisión",
-    // --- 1 COMENTARIO AÑADIDO ---
     comentarios: [
       {
-        id: 1,
+        id: 4,
         usuario: "DekuFan01",
         texto: "¡PLUS ULTRA! Me inspira a esforzarme cada día.",
         meGustas: 210,
@@ -145,10 +141,9 @@ export const animes: Anime[] = [
     genero: ["Action", "Military", "Thriller"],
     episodios: 89,
     estado: "Finalizado",
-    // --- 1 COMENTARIO AÑADIDO ---
     comentarios: [
       {
-        id: 1,
+        id: 5,
         usuario: "SurveyCorps",
         texto: "Shinzou wo Sasageyo! La trama política es tan buena como la acción.",
         meGustas: 550,
@@ -177,10 +172,9 @@ export const animes: Anime[] = [
     genero: ["Comedy", "Action", "Shonen"],
     episodios: 37,
     estado: "En emisión",
-    // --- 1 COMENTARIO AÑADIDO ---
     comentarios: [
       {
-        id: 1,
+        id: 6,
         usuario: "AnyaPeanuts",
         texto: "Waku waku! Es la mezcla perfecta de comedia y acción.",
         meGustas: 180,
@@ -209,10 +203,9 @@ export const animes: Anime[] = [
     genero: ["Mystery", "Psychological", "Supernatural"],
     episodios: 37,
     estado: "Finalizado",
-    // --- 1 COMENTARIO AÑADIDO ---
     comentarios: [
       {
-        id: 1,
+        id: 7,
         usuario: "Kira_Justice",
         texto: "El duelo intelectual entre Light y L es legendario.",
         meGustas: 400,
@@ -241,17 +234,16 @@ export const animes: Anime[] = [
     genero: ["Adventure", "SciFi", "Shonen"],
     episodios: 57,
     estado: "En emisión",
-    // --- 2 COMENTARIOS AÑADIDOS ---
     comentarios: [
       {
-        id: 1,
+        id: 8,
         usuario: "ScienceKingdom",
         texto: "¡Esto es emocionante al diez mil millones por ciento!",
         meGustas: 1000,
         fecha: "2019-08-10"
       },
       {
-        id: 2,
+        id: 9,
         usuario: "ChromeScience",
         texto: "Me encanta como explican la ciencia de forma tan divertida y lógica.",
         meGustas: 450,
@@ -319,7 +311,7 @@ export const animes: Anime[] = [
     estado: "En emisión",
     comentarios: [
       {
-        id: 1,
+        id: 10,
         usuario: "NezukoChan",
         texto: "La animación es de otro mundo, Ufotable se lució.",
         meGustas: 3200,
@@ -357,7 +349,7 @@ export const animes: Anime[] = [
     estado: "Finalizado",
     comentarios: [
       {
-        id: 1,
+        id: 11,
         usuario: "Dattebayo_99",
         texto: "Crecí viendo esto. La saga de Pain es insuperable.",
         meGustas: 5000,
@@ -395,7 +387,7 @@ export const animes: Anime[] = [
     estado: "En emisión",
     comentarios: [
       {
-        id: 1,
+        id: 12,
         usuario: "MugiwaraNoLuffy",
         texto: "El world building de Oda no tiene comparación.",
         meGustas: 4500,
@@ -433,7 +425,7 @@ export const animes: Anime[] = [
     estado: "En emisión",
     comentarios: [
       {
-        id: 1,
+        id: 13,
         usuario: "GojoSatoruLover",
         texto: "Las peleas son dinámicas y la banda sonora es brutal.",
         meGustas: 2100,
@@ -471,7 +463,7 @@ export const animes: Anime[] = [
     estado: "Finalizado",
     comentarios: [
       {
-        id: 1,
+        id: 14,
         usuario: "AlchemyMaster",
         texto: "Posiblemente el mejor anime de la historia. Un final perfecto.",
         meGustas: 6000,
@@ -509,7 +501,7 @@ export const animes: Anime[] = [
     estado: "Finalizado",
     comentarios: [
       {
-        id: 1,
+        id: 15,
         usuario: "KiritoBeater",
         texto: "El primer arco de Aincrad es legendario.",
         meGustas: 1200,
@@ -547,7 +539,7 @@ export const animes: Anime[] = [
     estado: "Finalizado",
     comentarios: [
       {
-        id: 1,
+        id: 16,
         usuario: "KanekiKen",
         texto: "Oshiete oshiete... el opening es inolvidable.",
         meGustas: 1500,
@@ -585,7 +577,7 @@ export const animes: Anime[] = [
     estado: "Finalizado",
     comentarios: [
       {
-        id: 1,
+        id: 17,
         usuario: "GonFreecss",
         texto: "El arco de las Hormigas Quimera es una obra de arte narrativa.",
         meGustas: 2800,
@@ -623,7 +615,7 @@ export const animes: Anime[] = [
     estado: "Finalizado",
     comentarios: [
       {
-        id: 1,
+        id: 18,
         usuario: "SaiyanPrince",
         texto: "El padre del Shonen moderno. Kame Hame Ha!",
         meGustas: 10000,
@@ -661,7 +653,7 @@ export const animes: Anime[] = [
     estado: "Finalizado",
     comentarios: [
       {
-        id: 1,
+        id: 19,
         usuario: "ShinjiGetInTheRobot",
         texto: "No entendí el final, pero me encantó.",
         meGustas: 900,
@@ -699,7 +691,7 @@ export const animes: Anime[] = [
     estado: "Finalizado",
     comentarios: [
       {
-        id: 1,
+        id: 20,
         usuario: "SpaceCowboy",
         texto: "See you space cowboy... La música jazz es perfecta.",
         meGustas: 2300,
@@ -737,7 +729,7 @@ export const animes: Anime[] = [
     estado: "Finalizado",
     comentarios: [
       {
-        id: 1,
+        id: 21,
         usuario: "MadScientist",
         texto: "El mejor anime de viajes en el tiempo. El Psy Kongroo.",
         meGustas: 3100,
@@ -775,7 +767,7 @@ export const animes: Anime[] = [
     estado: "En emisión",
     comentarios: [
       {
-        id: 1,
+        id: 22,
         usuario: "RemBestGirl",
         texto: "El sufrimiento de Subaru es real, pero la historia te atrapa.",
         meGustas: 1800,

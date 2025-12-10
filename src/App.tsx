@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="app-container">
-      {/* Header con tus props restaurados */}
+      {/* Header - No se toca */}
       <Header setAnimeActual={setAnimeActual} listaNombres={listaNombres} />
 
       <main className="main-content">
@@ -33,19 +33,24 @@ function App() {
           <p>La serie no existe</p>
         ) : (
           <>
-            <InfoAnime animeMostrado={anime} />
-            <Sidebar ListPersonajes={anime.personajes} />
+            {/* InfoAnime con layout de 2 columnas (izq: metadata+comentarios, der: sinopsis+personajes) */}
+            <div className="main-content__left">
+              <InfoAnime animeMostrado={anime} />
+            </div>
+            {/* Sidebar en el lado derecho */}
+            <aside className="main-content__sidebar">
+              <Sidebar ListPersonajes={anime.personajes} />
+            </aside>
           </>
         )}
       </main>
 
-      {/* 2. AQUÍ VA EL CARRUSEL */}
-      {/* Lo ponemos en una sección aparte para controlar márgenes y ancho */}
+      {/* Carrusel - Full width */}
       <section className="carousel-section">
-        {/* Puedes pasarle props si tu componente lo requiere, o dejarlo así */}
         <CarruselAnime listaCarrusel={listaCarrusel}/>
       </section>
 
+      {/* Footer - No se toca */}
       <Footer />
     </div>
   );
