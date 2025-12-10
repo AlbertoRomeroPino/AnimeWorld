@@ -120,5 +120,55 @@
   .anime-detail-card__content {
     grid-template-columns: 1fr;
     background-color: #0f0f0f;
+    gap: 25px;
+  }
+  
+  .anime-detail-card__header {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .anime-detail-card__left,
+  .anime-detail-card__right {
+    gap: 20px;
+  }
+  
+  .anime-detail-card__media-info {
+    padding: 15px;
+  }
+  
+  .anime-detail-card__content h3 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .anime-detail-card__content {
+    gap: 15px;
+  }
+  
+  .anime-detail-card__header {
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  .anime-detail-card__left,
+  .anime-detail-card__right {
+    gap: 15px;
+  }
+  
+  .anime-detail-card__media-info {
+    padding: 12px;
+    border-left-width: 3px;
+  }
+  
+  .anime-detail-card__content h3 {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+  }
+  
+  .anime-detail-card__meta-item {
+    padding: 8px 0;
+    font-size: 0.9rem;
   }
 }

@@ -19,8 +19,8 @@ function AnimePoster({titulo, imagen_url, tamaño = "mediano", redondeado = true
               alt={`Póster de ${titulo}`}
               src={imagen_url}
             />
-            <figcaption className="sr-only">
-              Póster principal del anime: {titulo}
+            <figcaption className="anime-poster__title">
+              {titulo}
             </figcaption>
           </figure>
     )

@@ -54,6 +54,7 @@ body {
   .main-content {
     grid-template-columns: 1fr;
     gap: 20px;
+    padding: 20px;
   }
   
   .main-content__left {
@@ -62,6 +63,31 @@ body {
   
   .main-content__sidebar {
     grid-column: 1;
+  }
+  
+  .carousel-section {
+    padding: 20px;
+  }
+}
+
+/* Extra pequeño: teléfonos */
+@media (max-width: 480px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .carousel-section {
+    padding: 15px;
+    border-top: 3px solid #e50914;
+    border-bottom: 3px solid #e50914;
+  }
+  
+  .related-posts__list,
+  .category-posts__list {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }
 

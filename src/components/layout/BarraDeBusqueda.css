@@ -39,3 +39,36 @@
 .search-item:hover {
   background-color: #f0f0f0; /* Gris clarito */
 }
+
+/* Responsive para tablets y móviles */
+@media (max-width: 768px) {
+  .search-input {
+    padding: 7px;
+    font-size: 0.95rem;
+  }
+  
+  .search-results {
+    max-height: 180px;
+  }
+  
+  .search-item {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+  
+  .search-results {
+    max-height: 150px;
+  }
+  
+  .search-item {
+    padding: 6px;
+    font-size: 0.85rem;
+  }
+}

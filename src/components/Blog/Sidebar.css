@@ -130,15 +130,61 @@
   .sidebar {
     gap: 12px;
     max-height: none;
+    overflow-y: visible;
+    padding: 0;
   }
 
   .sidebar h1 {
     font-size: 1rem;
     padding-bottom: 6px;
+    margin-bottom: 8px;
   }
 
   .sidebar .character-card,
   .sidebar section {
     padding: 8px;
+  }
+  
+  .sidebar .character-card__image-container {
+    height: 140px;
+  }
+  
+  .sidebar .character-card__role {
+    font-size: 0.85rem;
+  }
+  
+  .sidebar .character-card__name {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    gap: 10px;
+  }
+  
+  .sidebar h1 {
+    font-size: 0.9rem;
+  }
+  
+  .sidebar .character-card,
+  .sidebar section {
+    padding: 6px;
+  }
+  
+  .sidebar .character-card__image-container {
+    height: 120px;
+  }
+  
+  .sidebar .character-card__role {
+    font-size: 0.75rem;
+  }
+  
+  .sidebar .character-card__name {
+    font-size: 0.85rem;
+  }
+  
+  .sidebar .character-card__description {
+    font-size: 0.75rem;
   }
 }

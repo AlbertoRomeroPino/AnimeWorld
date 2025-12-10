@@ -1,5 +1,6 @@
 // BotonMegusta.tsx
 import { useState } from "react";
+import "./BotonMegusta.css";
 import type { Comentario } from "../../../../types/comentario";
 
 interface BotonMegustaProps {
@@ -26,9 +27,10 @@ export default function BotonMegusta({ comentario }: BotonMegustaProps) {
     <button
       className={`boton-like ${esMeGusta ? "activo" : ""}`}
       onClick={alternarSeguimiento}
+      title={`${likesCount} personas les gusta este comentario`}
     >
-      {esMeGusta ? "❤️" : "♡"}
-      <span style={{ marginLeft: '5px' }}>{likesCount}</span>
+      <span>{esMeGusta ? "❤️" : "♡"}</span>
+      <span>{likesCount}</span>
     </button>
   );
 }

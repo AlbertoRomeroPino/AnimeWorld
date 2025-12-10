@@ -8,10 +8,10 @@
 .carousel-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #ffc107;
-  margin: 0 0 20px 0;
+  color: #ffffff; /* Blanco para mayor legibilidad */
+  margin: 16px 0 0 0; /* Separación encima, ya que el título ahora aparece debajo del carrusel */
   text-align: center;
-  text-shadow: -1px -1px 0 #e50914, 1px -1px 0 #e50914, -1px 1px 0 #e50914, 1px 1px 0 #e50914;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .carousel-track {

@@ -65,3 +65,61 @@
   margin: 0;
   text-align: justify;
 }
+
+/* Responsive para tablets */
+@media (max-width: 768px) {
+  .character-card__image-container {
+    height: 220px;
+  }
+  
+  .character-card__role {
+    font-size: 0.85rem;
+  }
+  
+  .character-card__name {
+    font-size: 1.1rem;
+  }
+  
+  .character-card__details {
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+  
+  .character-card__badge {
+    padding: 3px 6px;
+    font-size: 0.8rem;
+  }
+  
+  .character-card__description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+  .character-card__image-container {
+    height: 180px;
+  }
+  
+  .character-card__role {
+    font-size: 0.75rem;
+  }
+  
+  .character-card__name {
+    font-size: 1rem;
+  }
+  
+  .character-card__details {
+    gap: 4px;
+  }
+  
+  .character-card__badge {
+    padding: 2px 4px;
+    font-size: 0.75rem;
+  }
+  
+  .character-card__description {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+}

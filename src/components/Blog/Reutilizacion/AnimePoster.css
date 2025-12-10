@@ -48,9 +48,29 @@
 .carousel-track .anime-detail-card__poster{
   flex: 0 0 auto;
   width: 180px; /* ancho medio por defecto */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.35));
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  align-items: center;
 }
 .carousel-track .anime-detail-card__image{
   height: 260px; /* altura media */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.carousel-track .anime-poster__title{
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: 0 6px;
+  line-height: 1.2;
 }
 
 @media (min-width: 768px){
