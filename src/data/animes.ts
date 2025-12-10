@@ -310,4 +310,498 @@ export const animes: Anime[] = [
     fecha_estreno: "2019-07-05",
     imagen_url: "./images/Anime/DrStone.jpg",
   },
+  {
+    id: 8,
+    titulo: "Kimetsu no Yaiba",
+    titulo_original: "Kimetsu no Yaiba",
+    genero: ["Action", "Historical", "Shonen"],
+    episodios: 26,
+    estado: "En emisión",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "NezukoChan",
+        texto: "La animación es de otro mundo, Ufotable se lució.",
+        meGustas: 3200,
+        fecha: "2019-09-28"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Tanjiro Kamado",
+        genero: "Hombre",
+        edad: 15,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Un joven bondadoso que se convierte en cazador de demonios para curar a su hermana.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Nezuko Kamado",
+        genero: "Mujer",
+        edad: 14,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Hermana de Tanjiro, convertida en demonio pero conserva su humanidad.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "Tanjiro emprende un viaje peligroso para buscar una cura para la maldición de su hermana y vengar a su familia asesinada por un demonio.",
+    fecha_estreno: "2019-04-06",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  },
+  {
+    id: 9,
+    titulo: "Naruto Shippuden",
+    titulo_original: "Naruto Shippuuden",
+    genero: ["Action", "Adventure", "Martial Arts"],
+    episodios: 500,
+    estado: "Finalizado",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "Dattebayo_99",
+        texto: "Crecí viendo esto. La saga de Pain es insuperable.",
+        meGustas: 5000,
+        fecha: "2017-03-23"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Naruto Uzumaki",
+        genero: "Hombre",
+        edad: 17,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Un ninja hiperactivo que busca convertirse en Hokage.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Sasuke Uchiha",
+        genero: "Hombre",
+        edad: 17,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "El rival de Naruto, busca venganza por su clan.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "Naruto regresa a la aldea después de dos años de entrenamiento para enfrentarse a la organización Akatsuki.",
+    fecha_estreno: "2007-02-15",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  },
+  {
+    id: 10,
+    titulo: "One Piece",
+    titulo_original: "One Piece",
+    genero: ["Adventure", "Fantasy", "Shonen"],
+    episodios: 1000,
+    estado: "En emisión",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "MugiwaraNoLuffy",
+        texto: "El world building de Oda no tiene comparación.",
+        meGustas: 4500,
+        fecha: "2023-01-10"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Monkey D. Luffy",
+        genero: "Hombre",
+        edad: 19,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Capitán de los Sombrero de Paja, hombre de goma que busca ser el Rey de los Piratas.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Roronoa Zoro",
+        genero: "Hombre",
+        edad: 21,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Espadachín del grupo que usa tres espadas.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "Luffy y su tripulación navegan por el Grand Line en busca del tesoro legendario One Piece.",
+    fecha_estreno: "1999-10-20",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  },
+  {
+    id: 11,
+    titulo: "Jujutsu Kaisen",
+    titulo_original: "Jujutsu Kaisen",
+    genero: ["Action", "Supernatural"],
+    episodios: 24,
+    estado: "En emisión",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "GojoSatoruLover",
+        texto: "Las peleas son dinámicas y la banda sonora es brutal.",
+        meGustas: 2100,
+        fecha: "2021-02-14"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Yuji Itadori",
+        genero: "Hombre",
+        edad: 15,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Un estudiante con una fuerza física inmensa que se traga un objeto maldito.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Satoru Gojo",
+        genero: "Hombre",
+        edad: 28,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "El hechicero más fuerte, maestro de Itadori.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "Yuji Itadori se une a una organización secreta de hechiceros para matar a una poderosa maldición llamada Ryomen Sukuna.",
+    fecha_estreno: "2020-10-03",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  },
+  {
+    id: 12,
+    titulo: "Fullmetal Alchemist: Brotherhood",
+    titulo_original: "Hagane no Renkinjutsushi",
+    genero: ["Adventure", "Drama", "Fantasy"],
+    episodios: 64,
+    estado: "Finalizado",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "AlchemyMaster",
+        texto: "Posiblemente el mejor anime de la historia. Un final perfecto.",
+        meGustas: 6000,
+        fecha: "2010-07-05"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Edward Elric",
+        genero: "Hombre",
+        edad: 15,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "El Alquimista de Acero, busca la Piedra Filosofal.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Alphonse Elric",
+        genero: "Hombre",
+        edad: 14,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Hermano de Edward, su alma está atada a una armadura.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "Dos hermanos buscan la Piedra Filosofal para restaurar sus cuerpos después de un intento fallido de revivir a su madre.",
+    fecha_estreno: "2009-04-05",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  },
+  {
+    id: 13,
+    titulo: "Sword Art Online",
+    titulo_original: "Sword Art Online",
+    genero: ["Action", "Adventure"],
+    episodios: 25,
+    estado: "Finalizado",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "KiritoBeater",
+        texto: "El primer arco de Aincrad es legendario.",
+        meGustas: 1200,
+        fecha: "2012-11-10"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Kirito",
+        genero: "Hombre",
+        edad: 16,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Un jugador solitario que lucha por sobrevivir en el juego mortal.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Asuna",
+        genero: "Mujer",
+        edad: 17,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Sublíder del gremio Caballeros de la Hermandad de la Sangre.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "Jugadores de un VRMMORPG quedan atrapados dentro del juego, donde morir en el juego significa morir en la vida real.",
+    fecha_estreno: "2012-07-08",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  },
+  {
+    id: 14,
+    titulo: "Tokyo Ghoul",
+    titulo_original: "Tokyo Ghoul",
+    genero: ["Action", "Horror", "Psychological"],
+    episodios: 12,
+    estado: "Finalizado",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "KanekiKen",
+        texto: "Oshiete oshiete... el opening es inolvidable.",
+        meGustas: 1500,
+        fecha: "2014-09-20"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Ken Kaneki",
+        genero: "Hombre",
+        edad: 18,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Un estudiante universitario que se convierte en mitad ghoul.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Touka Kirishima",
+        genero: "Mujer",
+        edad: 17,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Una ghoul que intenta vivir entre humanos.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "En Tokio, criaturas llamadas Ghouls viven entre los humanos y se alimentan de su carne. Kaneki se ve arrastrado a su mundo.",
+    fecha_estreno: "2014-07-04",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  },
+  {
+    id: 15,
+    titulo: "Hunter x Hunter",
+    titulo_original: "Hunter x Hunter (2011)",
+    genero: ["Action", "Adventure", "Fantasy"],
+    episodios: 148,
+    estado: "Finalizado",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "GonFreecss",
+        texto: "El arco de las Hormigas Quimera es una obra de arte narrativa.",
+        meGustas: 2800,
+        fecha: "2014-06-15"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Gon Freecss",
+        genero: "Hombre",
+        edad: 12,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Un niño optimista que quiere convertirse en Cazador para encontrar a su padre.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Killua Zoldyck",
+        genero: "Hombre",
+        edad: 12,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Un ex-asesino y el mejor amigo de Gon.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "Gon Freecss aspira a convertirse en Cazador, una élite excepcional de la humanidad, para encontrar a su padre.",
+    fecha_estreno: "2011-10-02",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  },
+  {
+    id: 16,
+    titulo: "Dragon Ball Z",
+    titulo_original: "Dragon Ball Z",
+    genero: ["Action", "Adventure", "Fantasy"],
+    episodios: 291,
+    estado: "Finalizado",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "SaiyanPrince",
+        texto: "El padre del Shonen moderno. Kame Hame Ha!",
+        meGustas: 10000,
+        fecha: "1996-02-01"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Goku",
+        genero: "Hombre",
+        edad: 30,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Saiyajin criado en la Tierra que protege el universo.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Vegeta",
+        genero: "Hombre",
+        edad: 35,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Príncipe de los Saiyajin, eterno rival de Goku.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "Goku y sus amigos defienden la Tierra contra villanos intergalácticos, androides y criaturas mágicas.",
+    fecha_estreno: "1989-04-26",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  },
+  {
+    id: 17,
+    titulo: "Neon Genesis Evangelion",
+    titulo_original: "Shin Seiki Evangelion",
+    genero: ["Action", "Mecha", "Psychological"],
+    episodios: 26,
+    estado: "Finalizado",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "ShinjiGetInTheRobot",
+        texto: "No entendí el final, pero me encantó.",
+        meGustas: 900,
+        fecha: "2005-08-12"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Shinji Ikari",
+        genero: "Hombre",
+        edad: 14,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Piloto del EVA-01, lucha con problemas de abandono y depresión.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Rei Ayanami",
+        genero: "Mujer",
+        edad: 14,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "La misteriosa piloto del EVA-00.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "Adolescentes deben pilotar máquinas gigantes biológicas llamadas Evangelion para proteger a la humanidad de los Ángeles.",
+    fecha_estreno: "1995-10-04",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  },
+  {
+    id: 18,
+    titulo: "Cowboy Bebop",
+    titulo_original: "Cowboy Bebop",
+    genero: ["Action", "SciFi", "Space"],
+    episodios: 26,
+    estado: "Finalizado",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "SpaceCowboy",
+        texto: "See you space cowboy... La música jazz es perfecta.",
+        meGustas: 2300,
+        fecha: "2001-05-20"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Spike Spiegel",
+        genero: "Hombre",
+        edad: 27,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Un cazarrecompensas con un pasado oscuro y experto en artes marciales.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Jet Black",
+        genero: "Hombre",
+        edad: 36,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Ex-policía y dueño de la nave Bebop.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "Un grupo de cazarrecompensas inadaptados viaja por la galaxia en su nave, el Bebop, atrapando criminales.",
+    fecha_estreno: "1998-04-03",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  },
+  {
+    id: 19,
+    titulo: "Steins;Gate",
+    titulo_original: "Steins;Gate",
+    genero: ["SciFi", "Thriller", "Psychological"],
+    episodios: 24,
+    estado: "Finalizado",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "MadScientist",
+        texto: "El mejor anime de viajes en el tiempo. El Psy Kongroo.",
+        meGustas: 3100,
+        fecha: "2013-09-11"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Rintarou Okabe",
+        genero: "Hombre",
+        edad: 18,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Un autoproclamado científico loco que descubre cómo enviar mensajes al pasado.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Kurisu Makise",
+        genero: "Mujer",
+        edad: 18,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Una genio de la neurociencia que se ve envuelta en los experimentos de Okabe.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "Un grupo de amigos crea accidentalmente una máquina capaz de enviar mensajes al pasado, alterando el presente con graves consecuencias.",
+    fecha_estreno: "2011-04-06",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  },
+  {
+    id: 20,
+    titulo: "Re:Zero",
+    titulo_original: "Re:Zero kara Hajimeru Isekai Seikatsu",
+    genero: ["Drama", "Fantasy", "Psychological"],
+    episodios: 50,
+    estado: "En emisión",
+    comentarios: [
+      {
+        id: 1,
+        usuario: "RemBestGirl",
+        texto: "El sufrimiento de Subaru es real, pero la historia te atrapa.",
+        meGustas: 1800,
+        fecha: "2016-08-30"
+      }
+    ],
+    personajes: [
+      {
+        nombre: "Subaru Natsuki",
+        genero: "Hombre",
+        edad: 17,
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Un chico transportado a otro mundo con la habilidad de regresar de la muerte.",
+        rol: "Protagonista",
+      },
+      {
+        nombre: "Emilia",
+        genero: "Mujer",
+        edad: 19, // Aparentes
+        Imagen_url: "https://picsum.photos/600/300?random=1",
+        descripcion: "Una medio elfa plateada candidata al trono real.",
+        rol: "Secundario",
+      }
+    ],
+    sinopsis: "Subaru Natsuki es transportado a un mundo de fantasía donde descubre que cada vez que muere, el tiempo retrocede.",
+    fecha_estreno: "2016-04-04",
+    imagen_url: "https://picsum.photos/600/300?random=1",
+  }
 ];
