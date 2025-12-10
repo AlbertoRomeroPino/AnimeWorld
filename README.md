@@ -1,4 +1,3 @@
-
 🎌 Galería de Anime — Práctica 3.1 React (Componentes y Estado)
 
 ![React](https://img.shields.io/badge/React-18-blue?logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-Enabled-3178C6?logo=typescript) ![Vite](https://img.shields.io/badge/Build-Vite-purple) ![Estado](https://img.shields.io/badge/Status-Completado-success)
@@ -6,7 +5,15 @@
 **Desarrollado por:** Alberto Romero Pino
 **Asignatura:** Desarrollo Web en Entorno Cliente
 **Fecha:** Diciembre 2025
-**Repositorio:** [AnimeWorld](https://github.com/AlbertoRomeroPino/AnimeWorld)
+**Repositorio:** [AnimeWorll
+](https://github.com/AlbertoRomeroPino/AnimeWorld)
+
+[
+](https://github.com/AlbertoRomeroPino/AnimeWorld)
+
+## 🚀 Live Demo
+
+Puedes ver el proyecto funcionando aquí: [AnimeWorld Live Demo](https://albertoromeropino.github.io/AnimeWorld/)
 
 ---
 
