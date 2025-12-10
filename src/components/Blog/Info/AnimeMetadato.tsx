@@ -9,7 +9,12 @@ interface AnimeMetadatoProps{
 function AnimeMetadato({animeMostrado} : AnimeMetadatoProps){
     return(
         <section className="anime-detail-card__media-info part-1">
-          <AnimePoster titulo={animeMostrado.titulo} imagen_url={animeMostrado.imagen_url}/>
+          <AnimePoster 
+            titulo={animeMostrado.titulo} 
+            imagen_url={animeMostrado.imagen_url}
+            tamaño="grande"
+            redondeado={true}
+          />
 
           {/* Lista de metadatos (<ul>) */}
           <ListaMetadatos animeMostrado={animeMostrado}/>

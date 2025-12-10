@@ -3,9 +3,11 @@ import "./FormularioComentario.css";
 
 interface FormularioComentariosProps {
   insertarComentario: (usuario: string, texto: string) => void;
+  colorBotón?: string; // NUEVO: personaliza color del botón
+  mostrarTitulo?: boolean; // NUEVO: mostrar o ocultar el h4
 }
 
-function FormularioComentarios({insertarComentario,}: FormularioComentariosProps) {
+function FormularioComentarios({insertarComentario, colorBotón = "#2e86de", mostrarTitulo = true}: FormularioComentariosProps) {
   const [nombre, setNombre] = useState("");
   const [comentario, setComentario] = useState("");
 
@@ -28,8 +30,8 @@ function FormularioComentarios({insertarComentario,}: FormularioComentariosProps
 
   return (
     <>
-      <h4>Dejanos tu comentario</h4>
-      <form onSubmit={handleSubmit} className="comment-form">
+      {mostrarTitulo && <h4>Dejanos tu comentario</h4>}
+      <form onSubmit={handleSubmit} className="comment-form" style={{"--boton-color": colorBotón} as React.CSSProperties}>
         <input
           type="text"
           placeholder="Nombre"

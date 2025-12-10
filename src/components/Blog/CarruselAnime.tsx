@@ -20,7 +20,9 @@ function CarruselAnime({ listaCarrusel }: CarruselAnimeProps) {
            <AnimePoster 
                 key={index}
                 titulo={anime.titulo} 
-                imagen_url={anime.imagen_url} 
+                imagen_url={anime.imagen_url}
+                tamaño="pequeño"
+                redondeado={true}
              />
         ))}
       </div>

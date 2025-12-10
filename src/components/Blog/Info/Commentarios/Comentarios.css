@@ -53,3 +53,40 @@
   margin-bottom: 4px;
   font-size: 0.9rem;
 }
+
+/* Metadatos y acciones del comentario */
+.comment-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.comment-meta{
+  color: #888;
+  font-size: 0.75rem;
+}
+
+.comment-body{
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.comment-actions{
+  display: flex;
+  gap: 8px;
+}
+
+.like-button{
+  background: transparent;
+  border: 1px solid #eee;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.like-button:hover{
+  background: #fff0f0;
+  border-color: #ffc0c0;
+}

@@ -13,9 +13,36 @@
   background-color: #eee;
 }
 
-/* Tamaño por defecto (usado fuera del carrusel) */
-.anime-detail-card__poster { width: 140px; }
-.anime-detail-card__poster .anime-detail-card__image { height: 200px; }
+/* PERSONALIZACIÓN DE TAMAÑO */
+.anime-detail-card__poster--pequeño {
+  width: 120px;
+}
+.anime-detail-card__poster--pequeño .anime-detail-card__image {
+  height: 170px;
+}
+
+.anime-detail-card__poster--mediano {
+  width: 160px;
+}
+.anime-detail-card__poster--mediano .anime-detail-card__image {
+  height: 230px;
+}
+
+.anime-detail-card__poster--grande {
+  width: 220px;
+}
+.anime-detail-card__poster--grande .anime-detail-card__image {
+  height: 320px;
+}
+
+/* PERSONALIZACIÓN DE BORDES */
+.anime-detail-card__poster.rounded .anime-detail-card__image {
+  border-radius: 12px;
+}
+
+.anime-detail-card__poster.sharp .anime-detail-card__image {
+  border-radius: 0;
+}
 
 /* Cuando el poster se usa dentro del carrusel, lo hacemos más grande */
 .carousel-track .anime-detail-card__poster{
@@ -30,3 +57,4 @@
   .carousel-track .anime-detail-card__poster{ width: 200px; }
   .carousel-track .anime-detail-card__image{ height: 300px; }
 }
+ 

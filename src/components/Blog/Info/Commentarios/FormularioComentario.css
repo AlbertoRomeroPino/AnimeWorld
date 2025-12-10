@@ -9,6 +9,7 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
   font-family: system-ui, -apple-system, sans-serif;
   box-sizing: border-box; /* Importante para que el padding no rompa el ancho */
+  --boton-color: #6c5ce7; /* Color por defecto, puede ser sobrescrito */
 }
 
 /* Título */
@@ -43,7 +44,7 @@ h4 {
 .comment-form input:focus,
 .comment-form textarea:focus {
   outline: none;
-  border-color: #6c5ce7; 
+  border-color: var(--boton-color); 
   background-color: #fff;
   box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.1);
 }
@@ -56,7 +57,7 @@ h4 {
 /* Botón de envío */
 .comment-form button {
   padding: 10px 20px;
-  background-color: #6c5ce7;
+  background-color: var(--boton-color);
   color: white;
   border: none;
   border-radius: 8px;
@@ -68,5 +69,5 @@ h4 {
 }
 
 .comment-form button:hover {
-  background-color: #5a4ad1; 
+  background-color: color-mix(in srgb, var(--boton-color) 85%, black); 
 }

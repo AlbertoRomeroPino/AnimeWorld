@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import type { Comentario } from "../../../../types/comentario";
 import FormularioComentarios from "./FormularioComentarios";
-import "./Comentarios.css"
+import "./Comentarios.css";
+import BotonMegusta from "./BotonMegusta";
 
 interface ComentariosProps {
   listacomentarios: Comentario[];
 }
 
 function Comentarios({ listacomentarios }: ComentariosProps) {
+  
+
   // Inicializamos el estado con las props
   const [comentarios, setComentarios] =
     useState<Comentario[]>(listacomentarios);
@@ -28,6 +31,9 @@ function Comentarios({ listacomentarios }: ComentariosProps) {
     };
     setComentarios([...comentarios, nuevoComentario]);
   }
+
+  
+
   return (
     <>
       <div className="comments-section">
@@ -35,14 +41,24 @@ function Comentarios({ listacomentarios }: ComentariosProps) {
         <ul>
           {comentarios.map((comentario) => (
             <li key={comentario.id}>
-              <strong>{comentario.usuario}: </strong>
-              {comentario.texto}
+              <div className="comment-header">
+                <strong>{comentario.usuario}</strong>
+                <small className="comment-meta">{comentario.fecha}</small>
+              </div>
+              <div className="comment-body">{comentario.texto}</div>
+              <div className="comment-actions">
+                <BotonMegusta comentario={comentario}/>
+              </div>
             </li>
           ))}
         </ul>
 
         {/* Pasamos la función al hijo */}
-        {<FormularioComentarios insertarComentario={insertarComentario} />}
+        {<FormularioComentarios 
+          insertarComentario={insertarComentario}
+          colorBotón="#2e86de"
+          mostrarTitulo={true}
+        />}
       </div>
     </>
   );
