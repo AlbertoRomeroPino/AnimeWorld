@@ -57,7 +57,7 @@ function Comentarios({ listacomentarios }: ComentariosProps) {
         {<FormularioComentarios 
           insertarComentario={insertarComentario}
           colorBotón="#2e86de"
-          mostrarTitulo={true}
+          mostrarTitulo={false}
         />}
       </div>
     </>
